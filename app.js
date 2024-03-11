@@ -5,7 +5,7 @@ const cors = require('cors');
 const crypto = require('crypto');
 
 const movies = require('./movies.json');
-const { validateMovie, validatePartialMovie } = require('./moviesValidations');
+const { validateMovie, validatePartialMovie } = require('./schemas/movies');
 
 //Desactivar la cabecera X-Powered-By
 app.disable('x-powered-by');
